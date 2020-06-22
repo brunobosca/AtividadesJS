@@ -1,9 +1,11 @@
-let lavarMaos = window.prompt('Você está lavando as mãos?')
-let mask = window.prompt('Você está usando máscara?')
+let readlineSync = require('readline-sync')
+
+let lavarMaos = readlineSync.question('Você está lavando as mãos?')
+let mask = readlineSync.question('Você está usando máscara?')
 
 if (lavarMaos == "sim" && mask == "sim") {
-alert('Parabéns" Você é uma pessoa previnida!')
+console.log('Parabéns Você é uma pessoa previnida!')
 }
 else {
-    alert('Você está errado!')
+    console.log('Você está errado!')
 }
